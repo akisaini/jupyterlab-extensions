@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     "declaration": true,
     "esModuleInterop":true,
     "lib": ["es2015", "dom"],
