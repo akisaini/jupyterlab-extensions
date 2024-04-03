@@ -9,9 +9,17 @@ import {
 import { MODULE_NAME, MODULE_VERSION } from './version';
 import { PageConfig } from '@jupyterlab/coreutils';
 import { store } from '@labshare/polus-render';
+import { Dropzone } from './Dropzone'; 
+import { IDragEvent } from '@lumino/dragdrop';
+import * as ReactDOM from 'react-dom';
+import React from 'react';
+// import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+
 
 // Import the CSS
 import '../css/widget.css';
+
+
 
 // Get the base URL of the JupyterLab session
 const baseUrl = PageConfig.getBaseUrl();
@@ -52,7 +60,7 @@ export class RenderView extends DOMWidgetView {
     let isOverlayPathUrl = this.model.get('is_overlayPath_url');
     let imageUrl = isImagePathUrl ? imagePath : `${baseUrl}${renderFilePrefix}${imagePath}`; // T/F condition ? valueIfTrue : valueIfFalse
     let overlayUrl = isOverlayPathUrl ? overlayPath : `${baseUrl}${renderFilePrefix}${overlayPath}`;
-
+    
     // Set the image url
     store.setState({
       urls: [
@@ -75,15 +83,33 @@ export class RenderView extends DOMWidgetView {
         });
       });
     });    
-
+    
+  
     this.el.innerHTML = `
-    <div style="width:100%;height:900px">
-    <div style="position: absolute; z-index: 100; right: 0">
-              <image-menu-web-component></image-menu-web-component>
-              <overlay-menu-web-component></overlay-menu-web-component>
-            </div>
-            <viv-viewer-web-component-wrapper></viv-viewer-web-component-wrapper>
-            </div>
+      <div id="fileInfo"></div>
+      <div id="dropzoneContainer"></div>
     `;
-  }
+
+    const handleDrop = async (e: IDragEvent): Promise<void> => {
+      // Log the dropped item's data
+      console.log("Item dropped:", e);
+
+      e.preventDefault();
+
+
+  };
+
+
+    // Get the container element
+    const dropzoneContainer = this.el.querySelector('#dropzoneContainer');
+
+    // Render the Dropzone component inside the container
+    ReactDOM.render(
+      <Dropzone onDrop={handleDrop}>
+        <div style={{ width: '100%', height: '900px' }}></div>
+      </Dropzone>,
+      dropzoneContainer
+    );
+      
+  }  
 }
