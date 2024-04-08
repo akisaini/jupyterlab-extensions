@@ -54,6 +54,7 @@ function activateWidgetExtension(
   registry: IJupyterWidgetRegistry,
   browserFactory: IFileBrowserFactory
 ): void { 
+  //let path: string; // Declare path variable in the outer scope to make available in ReactDOM if needed
   const RenderView = class extends DOMWidgetView {
     render() {
       let imagePath = this.model.get('imagePath');
@@ -86,10 +87,6 @@ function activateWidgetExtension(
         });
       });
 
-      this.el.innerHTML = `
-        <div id="dropzoneContainer"></div>
-      `;
-
       const { tracker }  = browserFactory;
 
       const handleDrop = async (e: IDragEvent): Promise<void> => {
@@ -99,23 +96,36 @@ function activateWidgetExtension(
         if (!widget) {
           return;
         }
-        const path = encodeURI(widget.selectedItems().next().value);
+        const selectedItem = widget.selectedItems().next().value;
+        if (!selectedItem) {
+          return;
+        }
+        const path = encodeURI(selectedItem.path);
         console.log(path)
+        if (filePath) {
+          filePath.innerHTML = `Path: ${path}`;
+        }
     };
 
-    // Get the container element
+    this.el.innerHTML = `
+    <div id="filePath"></div>
+    <div id="dropzoneContainer"></div>
+  `;
+
+    // Create the container element
     const dropzoneContainer = this.el.querySelector('#dropzoneContainer');
+    const filePath = this.el.querySelector('#filePath'); 
 
     // Render the Dropzone component inside the container
     ReactDOM.render(
       <Dropzone onDrop={handleDrop}>
         <div style={{ width: '100%', height: '900px' }}>
-          <polus-render></polus-render>
+          {/* Polus-render element 
+          <polus-render></polus-render>*/}
         </div>
       </Dropzone>,
       dropzoneContainer
     );
-
     }
   } 
 
