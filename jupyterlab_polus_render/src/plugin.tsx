@@ -13,6 +13,7 @@ import { IDragEvent } from '@lumino/dragdrop';
 import * as ReactDOM from 'react-dom';
 import React from 'react';
 
+
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -89,10 +90,17 @@ function activateWidgetExtension(
         <div id="dropzoneContainer"></div>
       `;
 
+      const { tracker }  = browserFactory;
+
       const handleDrop = async (e: IDragEvent): Promise<void> => {
         // Log the dropped item's data
         console.log("Item dropped:", e);
-  
+        const widget = tracker.currentWidget;
+        if (!widget) {
+          return;
+        }
+        const path = encodeURI(widget.selectedItems().next().value);
+        console.log(path)
     };
 
     // Get the container element
@@ -120,3 +128,5 @@ function activateWidgetExtension(
     },
   });
 }
+
+
