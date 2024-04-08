@@ -104,7 +104,7 @@ function activateWidgetExtension(
         <div style={{ width: '100%', height: '900px' }}>
           <polus-render></polus-render>
         </div>
-      </Dropzone> as any,
+      </Dropzone>,
       dropzoneContainer
     );
 
