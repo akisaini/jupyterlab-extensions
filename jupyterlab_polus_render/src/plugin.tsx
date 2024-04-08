@@ -13,6 +13,13 @@ import { IDragEvent } from '@lumino/dragdrop';
 import * as ReactDOM from 'react-dom';
 import React from 'react';
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'polus-render': any; // Define 'polus-render' as any type
+    }
+  }
+}
 
 
 const EXTENSION_ID = 'jupyterlab_polus_render:plugin';
@@ -79,9 +86,7 @@ function activateWidgetExtension(
       });
 
       this.el.innerHTML = `
-      <polus-render>
         <div id="dropzoneContainer"></div>
-      </polus-render>
       `;
 
       const handleDrop = async (e: IDragEvent): Promise<void> => {
@@ -96,13 +101,15 @@ function activateWidgetExtension(
     // Render the Dropzone component inside the container
     ReactDOM.render(
       <Dropzone onDrop={handleDrop}>
-        <div style={{ width: '100%', height: '900px' }}></div>
-      </Dropzone>,
+        <div style={{ width: '100%', height: '900px' }}>
+          <polus-render></polus-render>
+        </div>
+      </Dropzone> as any,
       dropzoneContainer
     );
 
     }
-  }
+  } 
 
   registry.registerWidget({
     name: MODULE_NAME,
