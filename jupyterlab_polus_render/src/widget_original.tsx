@@ -88,6 +88,7 @@ export class RenderView extends DOMWidgetView {
     this.el.innerHTML = `
       <div id="fileInfo"></div>
       <div id="dropzoneContainer"></div>
+      
     `;
 
     const handleDrop = async (e: IDragEvent): Promise<void> => {

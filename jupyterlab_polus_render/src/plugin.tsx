@@ -1,25 +1,21 @@
 import { Application } from '@lumino/application';
-
 import { DOMWidgetView } from '@jupyter-widgets/base';
-
 import { Widget } from '@lumino/widgets';
-
 import { IJupyterWidgetRegistry } from '@jupyter-widgets/base';
-
 import { JupyterFrontEndPlugin } from '@jupyterlab/application';
-
 import { PageConfig } from '@jupyterlab/coreutils';
-
 import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
-
 import { store } from '@labshare/polus-render';
-
 import { RenderModel } from './widget';
-
 import { MODULE_NAME, MODULE_VERSION } from './version';
+import { Dropzone } from './Dropzone'; 
+import { IDragEvent } from '@lumino/dragdrop';
+import * as ReactDOM from 'react-dom';
+import React from 'react';
+
+
 
 const EXTENSION_ID = 'jupyterlab_polus_render:plugin';
-
 
 
 // Get the base URL of the JupyterLab session
@@ -83,9 +79,28 @@ function activateWidgetExtension(
       });
 
       this.el.innerHTML = `
-      <div style="width:100%;height:900px">
-      <polus-render></polus-render>
+      <polus-render>
+        <div id="dropzoneContainer"></div>
+      </polus-render>
       `;
+
+      const handleDrop = async (e: IDragEvent): Promise<void> => {
+        // Log the dropped item's data
+        console.log("Item dropped:", e);
+  
+    };
+
+    // Get the container element
+    const dropzoneContainer = this.el.querySelector('#dropzoneContainer');
+
+    // Render the Dropzone component inside the container
+    ReactDOM.render(
+      <Dropzone onDrop={handleDrop}>
+        <div style={{ width: '100%', height: '900px' }}></div>
+      </Dropzone>,
+      dropzoneContainer
+    );
+
     }
   }
 
