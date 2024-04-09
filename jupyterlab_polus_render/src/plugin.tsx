@@ -105,27 +105,27 @@ function activateWidgetExtension(
         if (filePath) {
           filePath.innerHTML = `Path: ${path}`;
         }
-    };
+      };
 
-    this.el.innerHTML = `
-    <div id="filePath"></div>
-    <div id="dropzoneContainer"></div>
-  `;
+      this.el.innerHTML = `
+      <div id="filePath"></div>
+      <div id="dropzoneContainer"></div>
+      `;
 
-    // Create the container element
-    const dropzoneContainer = this.el.querySelector('#dropzoneContainer');
-    const filePath = this.el.querySelector('#filePath'); 
+      // Create the container element
+      const dropzoneContainer = this.el.querySelector('#dropzoneContainer');
+      const filePath = this.el.querySelector('#filePath'); 
 
-    // Render the Dropzone component inside the container
-    ReactDOM.render(
-      <Dropzone onDrop={handleDrop}>
-        <div style={{ width: '100%', height: '900px' }}>
-          {/* Polus-render element 
-          <polus-render></polus-render>*/}
-        </div>
-      </Dropzone>,
-      dropzoneContainer
-    );
+      // Render the Dropzone component inside the container
+      ReactDOM.render(
+        <Dropzone onDrop={handleDrop}>
+          <div style={{ width: '100%', height: '900px' }}>
+            {/* Polus-render element  */}
+            <polus-render></polus-render>
+          </div>
+        </Dropzone>,
+        dropzoneContainer
+      );
     }
   } 
 
