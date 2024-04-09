@@ -12,6 +12,7 @@ Attributes:
         * The entered local path for an overlay can be either relative or absolute. 
     - is_imagePath_url (bool): A flag indicating whether the imagePath is a URL.
     - is_overlayPath_url (bool): A flag indicating whether the overlayPath is a URL.
+    - notebook_absdir (str): The absolute path pointing to the current working directory.
 
 Methods:
     - create_full_path: creates the absolute path for a given file path. Handles both local and remote URL paths.
@@ -22,7 +23,7 @@ from pathlib import Path
 from ipywidgets import DOMWidget
 from traitlets import Unicode, Bool
 from ._frontend import module_name, module_version
-
+import os
 
 class Render(DOMWidget):
     _model_name = Unicode('RenderModel').tag(sync=True)
@@ -35,13 +36,14 @@ class Render(DOMWidget):
     overlayPath = Unicode('').tag(sync=True)
     is_imagePath_url = Bool(False).tag(sync=True)  # Flag if the imagePath is a URL
     is_overlayPath_url = Bool(False).tag(sync=True) # Flag if the overlayPath is a URL
-    
+    notebook_absdir = Unicode('').tag(sync=True)
+
     def __init__(self, imagePath='', overlayPath='', **kwargs):
         super().__init__(**kwargs)
 
         self.imagePath, self.is_imagePath_url = self.create_full_path(imagePath)
         self.overlayPath, self.is_overlayPath_url = self.create_full_path(overlayPath)
-
+        self.notebook_absdir = os.getcwd()
 
     def create_full_path(self, path):
         # If the path starts with 'http', return path value and set True for URL flag
@@ -51,7 +53,7 @@ class Render(DOMWidget):
             full_path = Path(path)  # Convert path to a Path object
             if not full_path.is_absolute():
                 notebook_dir = Path.cwd()  # Get the current notebook working directory
-                full_path = notebook_dir / path
+                full_path = notebook_dir / path 
                     
             # Raise FileNotFoundError if file does not exist             
             if not full_path.exists():
