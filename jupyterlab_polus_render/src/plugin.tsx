@@ -64,16 +64,18 @@ function activateWidgetExtension(
       let imageUrl = isImagePathUrl ? imagePath : `${baseUrl}${renderFilePrefix}${imagePath}`; // T/F condition ? valueIfTrue : valueIfFalse
       let overlayUrl = isOverlayPathUrl ? overlayPath : `${baseUrl}${renderFilePrefix}${overlayPath}`;
       let notebook_absdir = this.model.get('notebook_absdir'); // Fetch from render.py
-      
+
+
+      function loadsetState(image: string, overlay: string){
         // Set the image url
         store.setState({
           urls: [
-            imageUrl,
+            image,
           ],
         });
 
         // Set the overlay url
-        fetch(overlayUrl).then((response) => {
+        fetch(overlay).then((response) => {
           response.json().then((overlayData) => {
             store.setState({
               overlayData,
@@ -87,6 +89,9 @@ function activateWidgetExtension(
             });
           });
         });
+      }
+      
+      loadsetState(imageUrl, overlayUrl);
 
       const { tracker }  = browserFactory;
 
@@ -102,32 +107,25 @@ function activateWidgetExtension(
           return;
         }
         const relativePath = encodeURI(selectedItem.path);
-        //console.log(relativePath)
-        if (filePath) {
-          filePath.innerHTML = `Path: ${relativePath}`; 
-          //console.log(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`)
-          store.setState({
-            urls: [
-              `${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`,
-            ],
-          });
-          
-          // -- todo -- Set the overlay url -- todo --
-          fetch(overlayUrl).then((response) => {
-            response.json().then((overlayData) => {
-              store.setState({
-                overlayData,
-              });
-              const heatmapIds = Object.keys(overlayData.value_range)
-                .map((d: any) => ({ label: d, value: d }))
-                .concat({ label: 'None', value: null });
-    
-              store.setState({
-                heatmapIds,
-              });
-            });
-          });
+
+        // An overlay gets dropped on an image
+        if (relativePath.endsWith('.json')){
+          if (filePath) {
+            filePath.innerHTML = `Path: ${relativePath}`;
+          }
+            //console.log(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`)
+          loadsetState(imageUrl, `${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`); 
         }
+        else {
+          // An image gets dropped
+          //console.log(relativePath)
+          if (filePath) {
+            filePath.innerHTML = `Path: ${relativePath}`; 
+          }
+            //console.log(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`)
+          loadsetState(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`, overlayUrl);
+        }
+        
       };
 
       this.el.innerHTML = `
@@ -161,5 +159,3 @@ function activateWidgetExtension(
     },
   });
 }
-
-
