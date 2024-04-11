@@ -9,7 +9,7 @@ import { store } from '@labshare/polus-render';
 import { RenderModel } from './widget';
 import { MODULE_NAME, MODULE_VERSION } from './version';
 import { Dropzone } from './Dropzone'; 
-import { IDragEvent } from '@lumino/dragdrop';
+import { Drag } from '@lumino/dragdrop';
 import * as ReactDOM from 'react-dom';
 import React from 'react';
 
@@ -56,46 +56,48 @@ function activateWidgetExtension(
 ): void { 
   //let path: string; // Declare path variable in the outer scope to make available in ReactDOM if needed
   const RenderView = class extends DOMWidgetView {
-    render() {
+    loadsetState(){
       let imagePath = this.model.get('imagePath');
       let overlayPath = this.model.get('overlayPath');
       let isImagePathUrl = this.model.get('is_imagePath_url');
       let isOverlayPathUrl = this.model.get('is_overlayPath_url');
       let imageUrl = isImagePathUrl ? imagePath : `${baseUrl}${renderFilePrefix}${imagePath}`; // T/F condition ? valueIfTrue : valueIfFalse
       let overlayUrl = isOverlayPathUrl ? overlayPath : `${baseUrl}${renderFilePrefix}${overlayPath}`;
-      let notebook_absdir = this.model.get('notebook_absdir'); // Fetch from render.py
+      
+      // Set the image url
+      store.setState({
+        urls: [
+          imageUrl,
+        ],
+      });
 
+      // Set the overlay url
+      fetch(overlayUrl).then((response) => {
+        response.json().then((overlayData) => {
+          store.setState({
+            overlayData,
+          });
+          const heatmapIds = Object.keys(overlayData.value_range)
+            .map((d: any) => ({ label: d, value: d }))
+            .concat({ label: 'None', value: null });
 
-      function loadsetState(image: string, overlay: string){
-        // Set the image url
-        store.setState({
-          urls: [
-            image,
-          ],
-        });
-
-        // Set the overlay url
-        fetch(overlay).then((response) => {
-          response.json().then((overlayData) => {
-            store.setState({
-              overlayData,
-            });
-            const heatmapIds = Object.keys(overlayData.value_range)
-              .map((d: any) => ({ label: d, value: d }))
-              .concat({ label: 'None', value: null });
-
-            store.setState({
-              heatmapIds,
-            });
+          store.setState({
+            heatmapIds,
           });
         });
-      }
-      
-      loadsetState(imageUrl, overlayUrl);
+      });
+    }
+
+    render() {
+      this.loadsetState();
+
+      // Update view when model changes on Python side
+      this.model.on('change:imagePath', this.loadsetState, this);
+      this.model.on('change:overlayPath', this.loadsetState, this);
 
       const { tracker }  = browserFactory;
 
-      const handleDrop = async (e: IDragEvent): Promise<void> => {
+      const handleDrop = async (e: Drag.Event): Promise<void> => {
         // Log the dropped item's data
         console.log("Item dropped:", e);
         const widget = tracker.currentWidget;
@@ -108,22 +110,30 @@ function activateWidgetExtension(
         }
         const relativePath = encodeURI(selectedItem.path);
 
+        let notebook_absdir = this.model.get('notebook_absdir'); // Fetch from render.py
+
         // An overlay gets dropped on an image
         if (relativePath.endsWith('.json')){
           if (filePath) {
             filePath.innerHTML = `Path: ${relativePath}`;
           }
-            //console.log(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`)
-          loadsetState(imageUrl, `${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`); 
+          this.model.set('overlayPath', notebook_absdir + '/../' + relativePath);
+          this.model.set('is_overlayPath_url', false);
+          this.model.save_changes();
+
+          this.loadsetState(); 
         }
+        // An image gets dropped
         else {
-          // An image gets dropped
           //console.log(relativePath)
           if (filePath) {
             filePath.innerHTML = `Path: ${relativePath}`; 
           }
-            //console.log(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`)
-          loadsetState(`${baseUrl}${renderFilePrefix}${notebook_absdir}/../${relativePath}`, overlayUrl);
+          this.model.set('imagePath', notebook_absdir + '/../' + relativePath);
+          this.model.set('is_imagePath_url', false);
+          this.model.save_changes();
+
+          this.loadsetState();
         }
         
       };
