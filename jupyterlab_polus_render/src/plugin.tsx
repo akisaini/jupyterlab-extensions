@@ -64,6 +64,12 @@ function activateWidgetExtension(
       let imageUrl = isImagePathUrl ? imagePath : `${baseUrl}${renderFilePrefix}${imagePath}`; // T/F condition ? valueIfTrue : valueIfFalse
       let overlayUrl = isOverlayPathUrl ? overlayPath : `${baseUrl}${renderFilePrefix}${overlayPath}`;
       
+      // Updates the state based on current value
+      this.model.set('is_imagePath_url', imagePath.startsWith('http')); 
+      this.model.set('isOverlayPathUrl', overlayPath.startsWith('http')); 
+      this.model.save_changes();
+
+
       // Set the image url
       store.setState({
         urls: [
@@ -86,14 +92,23 @@ function activateWidgetExtension(
           });
         });
       });
+
     }
 
     render() {
       this.loadsetState();
 
-      // Update view when model changes on Python side
-      this.model.on('change:imagePath', this.loadsetState, this);
-      this.model.on('change:overlayPath', this.loadsetState, this);
+      // Observe changes to imagePath attribute and rerun widget when it changes
+      this.model.on('change:imagePath', () => {
+        this.loadsetState();
+        this.render();
+      }, this);
+
+      // Observe changes to overlayPath attribute and rerun widget when it changes
+      this.model.on('change:overlayPath', () => {
+        this.loadsetState();
+        this.render();
+      }, this);
 
       const { tracker }  = browserFactory;
 
