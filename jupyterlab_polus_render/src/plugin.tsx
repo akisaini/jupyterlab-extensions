@@ -98,16 +98,16 @@ function activateWidgetExtension(
     render() {
       this.loadsetState();
 
-      // Observe changes to imagePath attribute and rerun widget when it changes
+      // Observe any changes to imagePath and rerun the widget when it changes
       this.model.on('change:imagePath', () => {
-        this.loadsetState();
-        this.render();
+        this.loadsetState(); // Updates the value of imagePath
+        this.render(); // Re-render widgets view with new state
       }, this);
 
-      // Observe changes to overlayPath attribute and rerun widget when it changes
+      // Observe any changes to overlayPath and rerun the widget when it changes
       this.model.on('change:overlayPath', () => {
-        this.loadsetState();
-        this.render();
+        this.loadsetState(); // Updates the value of overlayPath
+        this.render(); // Re-render widgets view with new state
       }, this);
 
       const { tracker }  = browserFactory;
