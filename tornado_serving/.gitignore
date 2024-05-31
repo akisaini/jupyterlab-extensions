@@ -1,0 +1,13 @@
+# ignore tiff and ome.tiff files in root directory.
+*ome.tiff
+*.tiff
+# ignore tif and ome.tif files in root directory.
+*.ome.tif
+*.tif
+
+# ignore tif and ome.tif files in all sub directories. 
+**/*.tif
+**/*.ome.tif
+# ignore tiff and ome.tiff files in all sub directories. 
+**/*.tiff
+**/*.ome.tiff

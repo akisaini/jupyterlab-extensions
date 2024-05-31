@@ -1,41 +1,29 @@
+from tornado import ioloop, web
 import os
-from tornado import web, iostream, gen, ioloop
 
-class DownloadHandler(web.RequestHandler):
-    async def get(self, filename):
-        # Define the chunk size for reading the file
-        chunk_size = 1024 * 1024 * 1  # 1 MiB
-
-        # Ensure the file exists
-        if not os.path.exists(filename):
+class MainHandler(web.RequestHandler):
+    def get(self):
+        file_path = '/Users/sainia2/Documents/pj/forks/jupyterlab-extensions/tornado_serving/tmp/LuCa-7color_3x3component_data.ome.tif'  # Use your actual path
+        
+        if os.path.exists(file_path):
+            self.set_header('Content-Type', 'image/tiff')
+            with open(file_path, 'rb') as f:
+                while chunk := f.read(4096):
+                    self.write(chunk)
+                    self.flush()
+        else:
             self.set_status(404)
             self.write("File not found")
-            return
-
-        # Read and send the file in chunks
-        with open(filename, 'rb') as f:
-            while True:
-                chunk = f.read(chunk_size)
-                if not chunk:
-                    break
-                try:
-                    self.write(chunk)  # Write the chunk to the response
-                    await self.flush()  # Send the chunk to the client
-                except iostream.StreamClosedError:
-                    # Client has closed the connection, break the loop
-                    break
-                finally:
-                    del chunk
-                    # Pause the coroutine to allow other handlers to run
-                    await gen.sleep(0.000000001)  # 1 nanosecond
 
 def make_app():
     return web.Application([
-        (r"/download/(.*)", DownloadHandler),
+        (r"/image", MainHandler),
     ])
 
-if __name__ == "__main__":
+def start_server():
     app = make_app()
-    app.listen(8888)  # Listen on port 8888
-    print("Server started at http://localhost:8888")
+    app.listen(8889)
+    print("Tornado server is running at http://localhost:8889/image")
     ioloop.IOLoop.current().start()
+
+start_server()
