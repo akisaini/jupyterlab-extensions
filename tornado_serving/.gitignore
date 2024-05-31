@@ -11,3 +11,4 @@
 # ignore tiff and ome.tiff files in all sub directories. 
 **/*.tiff
 **/*.ome.tiff
+
