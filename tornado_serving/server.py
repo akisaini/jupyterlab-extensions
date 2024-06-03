@@ -3,7 +3,7 @@ import os
 
 class MainHandler(web.RequestHandler):
     def get(self):
-        file_path = '/Users/sainia2/Documents/pj/forks/jupyterlab-extensions/tornado_serving/tmp/LuCa-7color_3x3component_data.ome.tif'  # Use your actual path
+        file_path = '/Users/sainia2/Documents/pj/forks/jupyterlab-extensions/tornado_serving/tmp/LuCa-7color_3x3component_data.ome.tif' 
         
         if os.path.exists(file_path):
             self.set_header('Content-Type', 'image/tiff')
