@@ -1,6 +1,7 @@
 from tornado import ioloop, web
 import os
 
+
 class MainHandler(web.RequestHandler):
     def get(self):
         # Path to the TIFF image 
