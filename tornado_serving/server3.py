@@ -1,6 +1,6 @@
 from tornado import ioloop, web
 import numpy as np
-from tifffile import TiffFile
+from tifffile import TiffFile, imsave
 import os
 
 # Path to the TIFF image
@@ -32,11 +32,6 @@ for level, array in levels.items():
     memmap.flush()
     level_memmaps[level] = memmap
 
-def get_image_level_portion(level, start, end):
-    image_data = level_memmaps[level]
-    total_bytes = image_data.nbytes
-    byte_data = image_data.tobytes()
-    return byte_data[start:end+1], total_bytes
 
 class MainHandler(web.RequestHandler):
     def get(self):
@@ -49,6 +44,7 @@ class MainHandler(web.RequestHandler):
             self.write(f"Invalid level: {level}")
             return
         
+        # Serve the requested byte range if a Range header is present
         range_header = self.request.headers.get('Range', None)
         if range_header:
             print(f"Received Range Header: {range_header}")  
@@ -57,7 +53,19 @@ class MainHandler(web.RequestHandler):
             start = int(start)
             end = int(end) 
 
-            chunk, total_size = get_image_level_portion(level, start, end)
+            # Calculate the portion of the image array to be saved as TIFF
+            portion = level_memmaps[level]
+            total_size = level_memmaps[level].nbytes
+
+            # Save the portion as a new TIFF file
+            output_path = f'/tmp/portion_{level}.tif'
+            imsave(output_path, portion)
+
+            # Read the TIFF file and send it as response
+            with open(output_path, 'rb') as f:
+                chunk = f.read()
+
+            # chunk, total_size = get_image_level_portion(level, start, end)
 
             print(f"Serving bytes {start} to {end} of {total_size}")  
 
@@ -69,7 +77,7 @@ class MainHandler(web.RequestHandler):
             self.write(chunk)
             self.flush()
         else:
-            # If no range header, serve the entire level as TIFF bytes
+            # Serve the entire image level if no Range header is present as TIFF bytes
             array = level_memmaps[level]
             total_size = array.nbytes
             self.set_status(200)
