@@ -1,0 +1,831 @@
+OME-XML Metadata:
+ <?xml version="1.0" encoding="UTF-8"?><!-- Warning: this comment is an OME-XML metadata block, which contains crucial dimensional parameters and other important metadata. Please edit cautiously (if at all), and back up the original data before doing so. For more information, see the OME-TIFF web site: https://docs.openmicroscopy.org/latest/ome-model/ome-tiff/. --><OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Creator="OME Bio-Formats 6.7.0" UUID="urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd"><Instrument ID="Instrument:0"><Objective ID="Objective:0:0" Model="10x [10x]" NominalMagnification="10.0"/></Instrument><Image ID="Image:0" Name="resolution #1"><AcquisitionDate>2017-10-05T09:53:39</AcquisitionDate><Description/><InstrumentRef ID="Instrument:0"/><ObjectiveSettings ID="Objective:0:0"/><Pixels BigEndian="false" DimensionOrder="XYCZT" ID="Pixels:0" Interleaved="false" PhysicalSizeX="0.49799447890790055" PhysicalSizeXUnit="µm" PhysicalSizeY="0.49799447890790055" PhysicalSizeYUnit="µm" SignificantBits="32" SizeC="8" SizeT="1" SizeX="5604" SizeY="4200" SizeZ="1" Type="float"><Channel Color="-16776961" ID="Channel:0:0" Name="PDL1 (Opal 520)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="-65281" ID="Channel:0:1" Name="CD8 (Opal 540)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="-8388353" ID="Channel:0:2" Name="FoxP3 (Opal 570)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="-16711681" ID="Channel:0:3" Name="CD68 (Opal 620)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="16711935" ID="Channel:0:4" Name="PD1 (Opal 650)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="16777215" ID="Channel:0:5" Name="CK (Opal 690)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="65535" ID="Channel:0:6" Name="DAPI" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="255" ID="Channel:0:7" Name="Autofluorescence" SamplesPerPixel="1"><LightPath/></Channel><TiffData FirstC="0" FirstT="0" FirstZ="0" IFD="0" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="1" FirstT="0" FirstZ="0" IFD="1" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="2" FirstT="0" FirstZ="0" IFD="2" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="3" FirstT="0" FirstZ="0" IFD="3" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="4" FirstT="0" FirstZ="0" IFD="4" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="5" FirstT="0" FirstZ="0" IFD="5" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="6" FirstT="0" FirstZ="0" IFD="6" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="7" FirstT="0" FirstZ="0" IFD="7" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="0" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="1" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="2" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="3" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="4" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="5" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="6" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="7" TheT="0" TheZ="0"/></Pixels></Image><StructuredAnnotations><XMLAnnotation ID="Annotation:0" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SignalUnits</Key><Value>[33, 33, 33, 33, 33, 33, 33, 33]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:1" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ComputerName</Key><Value>[HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:2" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SMinSampleValue</Key><Value>0</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:3" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>XResolution</Key><Value>20080.543908699452</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:4" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileWidth</Key><Value>512</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:5" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileOffsets</Key><Value>25352185</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:6" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>YResolution</Key><Value>20080.543908699452</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:7" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>BitsPerSample</Key><Value>32</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:8" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Software</Key><Value>PerkinElmer-QPI</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:9" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Identifier</Key><Value>[0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:10" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Color</Key><Value>[255,0,0, 255,255,0, 255,128,0, 255,0,255, 0,255,0, 0,255,255, 0,0,255, 0,0,0]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:11" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>PhotometricInterpretation</Key><Value>BlackIsZero</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:12" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>NewSubfileType</Key><Value>0</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:13" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Objective</Key><Value>[10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x]]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:14" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ImageWidth</Key><Value>5604</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:15" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>YPosition</Key><Value>5.912702566000157</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:16" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SampleFormat</Key><Value>IEEE floating point</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:17" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>AcquisitionSoftware</Key><Value>[Jenga, Jenga, Jenga, Jenga, Jenga, Jenga, Jenga, Jenga]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:18" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Responsivity</Key><Value>[
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  ]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:19" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ImageLength</Key><Value>4200</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:20" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SlideID</Key><Value>[LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173]]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:21" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ImageType</Key><Value>[FullResolution, FullResolution, FullResolution, FullResolution, FullResolution, FullResolution, FullResolution, FullResolution]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:22" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>MetaDataPhotometricInterpretation</Key><Value>Monochrome</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:23" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>DateTime</Key><Value>2017:10:05 09:53:39</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:24" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SMaxSampleValue</Key><Value>66</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:25" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>IsUnmixedComponent</Key><Value>[True, True, True, True, True, True, True, True]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:26" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ResolutionUnit</Key><Value>Centimeter</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:27" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Compression</Key><Value>LZW</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:28" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>XPosition</Key><Value>1.6176745893001603</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:29" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileLength</Key><Value>512</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:30" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>PlanarConfiguration</Key><Value>Chunky</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:31" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Name</Key><Value>[PDL1 (Opal 520), CD8 (Opal 540), FoxP3 (Opal 570), CD68 (Opal 620), PD1 (Opal 650), CK (Opal 690), DAPI, Autofluorescence]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:32" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileByteCounts</Key><Value>1201105</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:33" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>NumberOfChannels</Key><Value>1</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:34" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>DescriptionVersion</Key><Value>[2, 2, 2, 2, 2, 2, 2, 2]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:35" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ExposureTime</Key><Value>[0, 0, 0, 0, 0, 0, 0, 0]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:36" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ValidationCode</Key><Value>[A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:37" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SamplesPerPixel</Key><Value>1</Value></OriginalMetadata></Value></XMLAnnotation><MapAnnotation ID="Annotation:Resolution:0" Namespace="openmicroscopy.org/PyramidResolution"><Value><M K="1">2802 2100</M><M K="2">1401 1050</M><M K="3">700 525</M><M K="4">350 262</M><M K="5">175 131</M></Value></MapAnnotation></StructuredAnnotations></OME>
+Page 0:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: <?xml version="1.0" encoding="UTF-8"?><!-- Warning: this comment is an OME-XML metadata block, which contains crucial dimensional parameters and other important metadata. Please edit cautiously (if at all), and back up the original data before doing so. For more information, see the OME-TIFF web site: https://docs.openmicroscopy.org/latest/ome-model/ome-tiff/. --><OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Creator="OME Bio-Formats 6.7.0" UUID="urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd"><Instrument ID="Instrument:0"><Objective ID="Objective:0:0" Model="10x [10x]" NominalMagnification="10.0"/></Instrument><Image ID="Image:0" Name="resolution #1"><AcquisitionDate>2017-10-05T09:53:39</AcquisitionDate><Description/><InstrumentRef ID="Instrument:0"/><ObjectiveSettings ID="Objective:0:0"/><Pixels BigEndian="false" DimensionOrder="XYCZT" ID="Pixels:0" Interleaved="false" PhysicalSizeX="0.49799447890790055" PhysicalSizeXUnit="µm" PhysicalSizeY="0.49799447890790055" PhysicalSizeYUnit="µm" SignificantBits="32" SizeC="8" SizeT="1" SizeX="5604" SizeY="4200" SizeZ="1" Type="float"><Channel Color="-16776961" ID="Channel:0:0" Name="PDL1 (Opal 520)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="-65281" ID="Channel:0:1" Name="CD8 (Opal 540)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="-8388353" ID="Channel:0:2" Name="FoxP3 (Opal 570)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="-16711681" ID="Channel:0:3" Name="CD68 (Opal 620)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="16711935" ID="Channel:0:4" Name="PD1 (Opal 650)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="16777215" ID="Channel:0:5" Name="CK (Opal 690)" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="65535" ID="Channel:0:6" Name="DAPI" SamplesPerPixel="1"><LightPath/></Channel><Channel Color="255" ID="Channel:0:7" Name="Autofluorescence" SamplesPerPixel="1"><LightPath/></Channel><TiffData FirstC="0" FirstT="0" FirstZ="0" IFD="0" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="1" FirstT="0" FirstZ="0" IFD="1" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="2" FirstT="0" FirstZ="0" IFD="2" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="3" FirstT="0" FirstZ="0" IFD="3" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="4" FirstT="0" FirstZ="0" IFD="4" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="5" FirstT="0" FirstZ="0" IFD="5" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="6" FirstT="0" FirstZ="0" IFD="6" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><TiffData FirstC="7" FirstT="0" FirstZ="0" IFD="7" PlaneCount="1"><UUID FileName="LuCa-7color_3x3component_data.ome.tif">urn:uuid:913428a1-535d-440a-9edb-32bf817a87c0</UUID></TiffData><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="0" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="1" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="2" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="3" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="4" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="5" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="6" TheT="0" TheZ="0"/><Plane ExposureTime="0.0" ExposureTimeUnit="µs" PositionX="16176.745893001604" PositionXUnit="µm" PositionY="59127.02566000157" PositionYUnit="µm" TheC="7" TheT="0" TheZ="0"/></Pixels></Image><StructuredAnnotations><XMLAnnotation ID="Annotation:0" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SignalUnits</Key><Value>[33, 33, 33, 33, 33, 33, 33, 33]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:1" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ComputerName</Key><Value>[HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527, HOPLL527]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:2" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SMinSampleValue</Key><Value>0</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:3" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>XResolution</Key><Value>20080.543908699452</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:4" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileWidth</Key><Value>512</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:5" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileOffsets</Key><Value>25352185</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:6" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>YResolution</Key><Value>20080.543908699452</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:7" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>BitsPerSample</Key><Value>32</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:8" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Software</Key><Value>PerkinElmer-QPI</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:9" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Identifier</Key><Value>[0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d, 0e486e0b-2511-4856-9852-c8be1915362d]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:10" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Color</Key><Value>[255,0,0, 255,255,0, 255,128,0, 255,0,255, 0,255,0, 0,255,255, 0,0,255, 0,0,0]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:11" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>PhotometricInterpretation</Key><Value>BlackIsZero</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:12" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>NewSubfileType</Key><Value>0</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:13" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Objective</Key><Value>[10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x], 10x [10x]]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:14" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ImageWidth</Key><Value>5604</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:15" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>YPosition</Key><Value>5.912702566000157</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:16" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SampleFormat</Key><Value>IEEE floating point</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:17" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>AcquisitionSoftware</Key><Value>[Jenga, Jenga, Jenga, Jenga, Jenga, Jenga, Jenga, Jenga]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:18" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Responsivity</Key><Value>[
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  , 
+    
+      DAPI
+      14.9368283928811
+      2017-09-25T18:55:00.9465418Z
+      Semrock:FF02-409/LP-25 Emission / Semrock:FF01-387/11-25 Excitation
+    
+    
+      FITC or AF488
+      152.7751358502
+      2017-09-22T13:27:17.2505546Z
+      Chroma:ET510LP Emission / Chroma:ET480/40x Excitation
+    
+    
+      Cy3 or TRITC
+      5.13087381616339
+      2017-09-22T13:30:27.4364090Z
+      Chroma:HQ572LP Emission / Chroma:HQ545/30x Excitation
+    
+    
+      Texas Red or AF594
+      0.204841067251092
+      2017-09-22T14:38:30.8895713Z
+      Semrock:FF01-657/106-25 Emission / Semrock:FF01-578/22-25 Excitation
+    
+    
+      Cy5 or AF647
+      0.00877244936874489
+      2017-09-22T13:37:37.8905894Z
+      Chroma:ET700/75m Emission / Chroma:ET620/60x Excitation
+    
+  ]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:19" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ImageLength</Key><Value>4200</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:20" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SlideID</Key><Value>[LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173], LuCa-7color_[17572,60173]]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:21" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ImageType</Key><Value>[FullResolution, FullResolution, FullResolution, FullResolution, FullResolution, FullResolution, FullResolution, FullResolution]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:22" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>MetaDataPhotometricInterpretation</Key><Value>Monochrome</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:23" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>DateTime</Key><Value>2017:10:05 09:53:39</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:24" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SMaxSampleValue</Key><Value>66</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:25" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>IsUnmixedComponent</Key><Value>[True, True, True, True, True, True, True, True]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:26" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ResolutionUnit</Key><Value>Centimeter</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:27" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Compression</Key><Value>LZW</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:28" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>XPosition</Key><Value>1.6176745893001603</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:29" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileLength</Key><Value>512</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:30" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>PlanarConfiguration</Key><Value>Chunky</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:31" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>Name</Key><Value>[PDL1 (Opal 520), CD8 (Opal 540), FoxP3 (Opal 570), CD68 (Opal 620), PD1 (Opal 650), CK (Opal 690), DAPI, Autofluorescence]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:32" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>TileByteCounts</Key><Value>1201105</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:33" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>NumberOfChannels</Key><Value>1</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:34" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>DescriptionVersion</Key><Value>[2, 2, 2, 2, 2, 2, 2, 2]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:35" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ExposureTime</Key><Value>[0, 0, 0, 0, 0, 0, 0, 0]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:36" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>ValidationCode</Key><Value>[A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F, A9133017671FDFFD0B50B48F68BD0B11CEC77797DCE33C25647EEE55A994125F]</Value></OriginalMetadata></Value></XMLAnnotation><XMLAnnotation ID="Annotation:37" Namespace="openmicroscopy.org/OriginalMetadata"><Value><OriginalMetadata><Key>SamplesPerPixel</Key><Value>1</Value></OriginalMetadata></Value></XMLAnnotation><MapAnnotation ID="Annotation:Resolution:0" Namespace="openmicroscopy.org/PyramidResolution"><Value><M K="1">2802 2100</M><M K="2">1401 1050</M><M K="3">700 525</M><M K="4">350 262</M><M K="5">175 131</M></Value></MapAnnotation></StructuredAnnotations></OME>
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (1122, 1202349, 2392733, 3600213, 4806156, 5931301, 7129894, 8335711, 9521702, 10722920, 11920774, 13056477, 14249082, 15370564, 16526636, 17588698, 18631363, 19774772, 20957289, 22144289, 23356349, 24529457, 25656817, 26825753, 27997172, 29149346, 30301608, 31300521, 32396553, 33554947, 34696905, 35834312, 36921712, 38003244, 39201231, 40417982, 41631419, 42790973, 43932781, 45076118, 46186155, 47342546, 48463317, 49027857, 49697978, 50891140, 52097664, 53307141, 54477326, 55633549, 56824159, 58030509, 59182778, 59764972, 59903564, 59982913, 61183309, 62386285, 63600287, 64802387, 66015997, 67240040, 68463359, 69672275, 70317771, 70391218, 70451233, 71646871, 72849859, 74055805, 75241371, 76429255, 77618318, 78834520, 80015822, 80196250, 80237974, 80276615, 81484747, 82677646, 83869605, 85035042, 86183695, 87292354, 88455987, 89244720, 89289009, 89317377, 89350613, 89592804, 89839883, 90088320, 90307875, 90504719, 90746523, 90978679, 91065152, 91074755, 91081769)
+  TileByteCounts: (1201227, 1190384, 1207480, 1205943, 1125145, 1198593, 1205817, 1185991, 1201218, 1197854, 1135703, 1192605, 1121482, 1156072, 1062062, 1042665, 1143409, 1182517, 1187000, 1212060, 1173108, 1127360, 1168936, 1171419, 1152174, 1152262, 998913, 1096032, 1158394, 1141958, 1137407, 1087400, 1081532, 1197987, 1216751, 1213437, 1159554, 1141808, 1143337, 1110037, 1156391, 1120771, 564540, 670121, 1193162, 1206524, 1209477, 1170185, 1156223, 1190610, 1206350, 1152269, 582194, 138592, 79349, 1200396, 1202976, 1214002, 1202100, 1213610, 1224043, 1223319, 1208916, 645496, 73447, 60015, 1195638, 1202988, 1205946, 1185566, 1187884, 1189063, 1216202, 1181302, 180428, 41724, 38641, 1208132, 1192899, 1191959, 1165437, 1148653, 1108659, 1163633, 788733, 44289, 28368, 33236, 242191, 247079, 248437, 219555, 196844, 241804, 232156, 86473, 9603, 7014, 10717)
+  SubIFDs: (672810236, 842455114, 885152256, 895939966, 898631473)
+  SampleFormat: 3
+Page 1:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (91093600, 91743257, 92229796, 92571500, 92981725, 93519818, 93930375, 94232179, 94826954, 95344898, 95696928, 95944192, 96593702, 96976178, 97331378, 97709763, 98169451, 98616828, 98933727, 99568829, 100100793, 100622037, 100978253, 101510246, 101981532, 102267278, 102812621, 103275243, 103680266, 103957355, 104491842, 104890854, 105226390, 105560414, 106195277, 106622913, 106921551, 107285219, 107835590, 108187452, 108388658, 108846633, 109205683, 109339466, 109470429, 110161668, 110688072, 111084963, 111508112, 112026131, 112380685, 112615618, 113067673, 113263563, 113327201, 113403004, 114134990, 114627943, 114980320, 115383165, 115896822, 116258904, 116491549, 116970541, 117260200, 117330206, 117416142, 118090566, 118588003, 118910623, 119294527, 119747604, 120059011, 120292530, 120784344, 120880271, 120939067, 121006879, 121756816, 122335501, 122710658, 123090636, 123558314, 124010137, 124456519, 124791706, 124846235, 124897219, 124960893, 125103128, 125217832, 125292728, 125367603, 125435716, 125524301, 125602151, 125630812, 125644403, 125656892)
+  TileByteCounts: (649657, 486539, 341704, 410225, 538093, 410557, 301804, 594775, 517944, 352030, 247264, 649510, 382476, 355200, 378385, 459688, 447377, 316899, 635102, 531964, 521244, 356216, 531993, 471286, 285746, 545343, 462622, 405023, 277089, 534487, 399012, 335536, 334024, 634863, 427636, 298638, 363668, 550371, 351862, 201206, 457975, 359050, 133783, 130963, 691239, 526404, 396891, 423149, 518019, 354554, 234933, 452055, 195890, 63638, 75803, 731986, 492953, 352377, 402845, 513657, 362082, 232645, 478992, 289659, 70006, 85936, 674424, 497437, 322620, 383904, 453077, 311407, 233519, 491814, 95927, 58796, 67812, 749937, 578685, 375157, 379978, 467678, 451823, 446382, 335187, 54529, 50984, 63674, 142235, 114704, 74896, 74875, 68113, 88585, 77850, 28661, 13591, 12489, 17531)
+  SubIFDs: (695784526, 848236661, 886610223, 896304226, 898723100)
+  SampleFormat: 3
+Page 2:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (125675537, 126497690, 127458259, 128511182, 129469063, 130264911, 131293351, 132354594, 133158947, 134113840, 135191810, 136236433, 136919366, 137644001, 138579317, 139304505, 139905598, 140720810, 141690873, 142451969, 143278414, 144224141, 145207896, 145737651, 146557339, 147388523, 148164878, 148760790, 149508890, 150396678, 151005945, 151665499, 152463194, 153337892, 154108802, 154962959, 155911284, 156675822, 157365291, 158158352, 158902658, 159525347, 160280321, 160779494, 161379319, 162077654, 162872699, 163888047, 164630550, 165203236, 165888110, 166706583, 167270256, 167607397, 167839199, 168088285, 168816743, 169744041, 170736997, 171481314, 172045610, 172844119, 173740389, 174346337, 174829859, 175116674, 175392468, 176060422, 176970477, 177924878, 178656059, 179205259, 179759686, 180608678, 181293606, 181582194, 181863107, 182124714, 182710559, 183457046, 184185439, 184751961, 185193436, 185751626, 186552544, 187031916, 187212083, 187410548, 187607396, 187730851, 187885267, 188052632, 188167538, 188250231, 188382736, 188534671, 188599746, 188642412, 188681852)
+  TileByteCounts: (822153, 960569, 1052923, 957881, 795848, 1028440, 1061243, 804353, 954893, 1077970, 1044623, 682933, 724635, 935316, 725188, 601093, 815212, 970063, 761096, 826445, 945727, 983755, 529755, 819688, 831184, 776355, 595912, 748100, 887788, 609267, 659554, 797695, 874698, 770910, 854157, 948325, 764538, 689469, 793061, 744306, 622689, 754974, 499173, 599825, 698335, 795045, 1015348, 742503, 572686, 684874, 818473, 563673, 337141, 231802, 249086, 728458, 927298, 992956, 744317, 564296, 798509, 896270, 605948, 483522, 286815, 275794, 667954, 910055, 954401, 731181, 549200, 554427, 848992, 684928, 288588, 280913, 261607, 585845, 746487, 728393, 566522, 441475, 558190, 800918, 479372, 180167, 198465, 196848, 123455, 154416, 167365, 114906, 82693, 132505, 151935, 65075, 42666, 39440, 37395)
+  SubIFDs: (704521963, 850443806, 887172760, 896443782, 898758433)
+  SampleFormat: 3
+Page 3:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (188720361, 189667348, 190589438, 191383620, 192193049, 193115625, 194125876, 194851577, 195746433, 196718160, 197585460, 198229275, 199190516, 199926417, 200719637, 201398456, 202172460, 203027099, 203769271, 204726427, 205679124, 206646170, 207339067, 208142151, 209004242, 209686831, 210506777, 211222556, 211990240, 212779274, 213534447, 214295395, 214994703, 215667569, 216627105, 217446270, 218145787, 218807713, 219656882, 220462385, 220973224, 221607128, 222418175, 222812045, 223191818, 224211420, 225109457, 226057777, 226753164, 227588718, 228308461, 228873783, 229541368, 229944831, 230181291, 230378902, 231410773, 232358122, 233165328, 233843391, 234636712, 235369003, 235838220, 236552185, 237084111, 237314404, 237525095, 238558627, 239541779, 240367699, 241026805, 241725668, 242316889, 242850029, 243799893, 244077236, 244282445, 244459399, 245544944, 246520334, 247188906, 247829294, 248559433, 249372750, 250343721, 250894167, 251047896, 251194109, 251329283, 251525585, 251712749, 251873737, 251997049, 252114800, 252290081, 252455921, 252505882, 252541751, 252571011)
+  TileByteCounts: (946987, 922090, 794182, 809429, 922576, 1010251, 725701, 894856, 971727, 867300, 643815, 961241, 735901, 793220, 678819, 774004, 854639, 742172, 957156, 952697, 967046, 692897, 803084, 862091, 682589, 819946, 715779, 767684, 789034, 755173, 760948, 699308, 672866, 959536, 819165, 699517, 661926, 849169, 805503, 510839, 633904, 811047, 393870, 379773, 1019602, 898037, 948320, 695387, 835554, 719743, 565322, 667585, 403463, 236460, 197611, 1031871, 947349, 807206, 678063, 793321, 732291, 469217, 713965, 531926, 230293, 210691, 1033532, 983152, 825920, 659106, 698863, 591221, 533140, 949864, 277343, 205209, 176954, 1085545, 975390, 668572, 640388, 730139, 813317, 970971, 550446, 153729, 146213, 135174, 196302, 187164, 160988, 123312, 117751, 175281, 165840, 49961, 35869, 29260, 28937)
+  SubIFDs: (720421502, 854441888, 888182991, 896694569, 898821422)
+  SampleFormat: 3
+Page 4:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (252601062, 253793375, 254978633, 256165914, 257363709, 258572017, 259764640, 260965120, 262163970, 263354311, 264537002, 265661897, 266869168, 268067878, 269264260, 270466921, 271692694, 272901770, 274111737, 275313148, 276525209, 277714969, 278844853, 280060352, 281274540, 282493888, 283693701, 284900695, 286118885, 287334958, 288537007, 289733535, 290927264, 292069444, 293268993, 294481353, 295691997, 296900358, 298114880, 299336265, 300542590, 301735374, 302929488, 304028512, 305054924, 306233588, 307439926, 308628066, 309834518, 311059462, 312286687, 313496633, 314679111, 315737284, 316692627, 317470860, 318651686, 319837255, 321041137, 322240678, 323453978, 324664940, 325871771, 327078089, 328211864, 329105748, 329809751, 330998097, 332186062, 333386007, 334596396, 335807409, 337018048, 338238368, 339464420, 340542204, 341482536, 342186917, 343372468, 344563120, 345768868, 346983485, 348197916, 349431370, 350646822, 351791632, 352687859, 353482392, 354090133, 354335096, 354580311, 354825672, 355072309, 355321731, 355574081, 355825757, 356016653, 356185179, 356321979)
+  TileByteCounts: (1192313, 1185258, 1187281, 1197795, 1208308, 1192623, 1200480, 1198850, 1190341, 1182691, 1124895, 1207271, 1198710, 1196382, 1202661, 1225773, 1209076, 1209967, 1201411, 1212061, 1189760, 1129884, 1215499, 1214188, 1219348, 1199813, 1206994, 1218190, 1216073, 1202049, 1196528, 1193729, 1142180, 1199549, 1212360, 1210644, 1208361, 1214522, 1221385, 1206325, 1192784, 1194114, 1099024, 1026412, 1178664, 1206338, 1188140, 1206452, 1224944, 1227225, 1209946, 1182478, 1058173, 955343, 778233, 1180826, 1185569, 1203882, 1199541, 1213300, 1210962, 1206831, 1206318, 1133775, 893884, 704003, 1188346, 1187965, 1199945, 1210389, 1211013, 1210639, 1220320, 1226052, 1077784, 940332, 704381, 1185551, 1190652, 1205748, 1214617, 1214431, 1233454, 1215452, 1144810, 896227, 794533, 607741, 244963, 245215, 245361, 246637, 249422, 252350, 251676, 190896, 168526, 136800, 111646)
+  SubIFDs: (736562568, 858516545, 889217009, 896952764, 898886679)
+  SampleFormat: 3
+Page 5:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (356434739, 357635710, 358815619, 360000499, 361150857, 362342676, 363485105, 364685269, 365887530, 367086701, 368281090, 369420761, 370620395, 371816869, 373007083, 374209572, 375435395, 376640610, 377848401, 379045899, 380257048, 381437699, 382563399, 383772526, 384969921, 386185277, 387372796, 388600795, 389813836, 391029888, 392259587, 393485474, 394703332, 395852772, 397051941, 398256469, 399465616, 400683777, 401896627, 403109158, 404328990, 405558268, 406789303, 407991473, 409135274, 410325840, 411523436, 412692702, 413904473, 415123247, 416335656, 417553561, 418785460, 420001658, 421151394, 422199771, 423401355, 424600281, 425796421, 427011783, 428236166, 429447627, 430666430, 431881980, 433085442, 434152258, 435089081, 436282294, 437478829, 438668264, 439881612, 441105828, 442303667, 443524485, 444674303, 445800990, 446870297, 447806981, 449001272, 450190351, 451394774, 452587400, 453785899, 454941477, 456061258, 457276238, 458353442, 459419016, 460356478, 460606331, 460852656, 461098058, 461345709, 461596680, 461827857, 462070811, 462301295, 462509025, 462714900)
+  TileByteCounts: (1200971, 1179909, 1184880, 1150358, 1191819, 1142429, 1200164, 1202261, 1199171, 1194389, 1139671, 1199634, 1196474, 1190214, 1202489, 1225823, 1205215, 1207791, 1197498, 1211149, 1180651, 1125700, 1209127, 1197395, 1215356, 1187519, 1227999, 1213041, 1216052, 1229699, 1225887, 1217858, 1149440, 1199169, 1204528, 1209147, 1218161, 1212850, 1212531, 1219832, 1229278, 1231035, 1202170, 1143801, 1190566, 1197596, 1169266, 1211771, 1218774, 1212409, 1217905, 1231899, 1216198, 1149736, 1048377, 1201584, 1198926, 1196140, 1215362, 1224383, 1211461, 1218803, 1215550, 1203462, 1066816, 936823, 1193213, 1196535, 1189435, 1213348, 1224216, 1197839, 1220818, 1149818, 1126687, 1069307, 936684, 1194291, 1189079, 1204423, 1192626, 1198499, 1155578, 1119781, 1214980, 1077204, 1065574, 937462, 249853, 246325, 245402, 247651, 250971, 231177, 242954, 230484, 207730, 205875, 179936)
+  SubIFDs: (762738887, 865101582, 890879414, 897368190, 898990982)
+  SampleFormat: 3
+Page 6:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (462895950, 464102253, 465309275, 466518494, 467730984, 468941028, 470151961, 471362822, 472567184, 473780334, 474991206, 476138050, 477348923, 478543193, 479748881, 480946309, 482148261, 483346406, 484554917, 485762160, 486978161, 488187218, 489336322, 490520208, 491733381, 492934747, 494153922, 495349004, 496548997, 497741688, 498946033, 500124565, 501315599, 502463672, 503676647, 504880632, 506091682, 507294215, 508508751, 509675609, 510858435, 512067703, 513245830, 514393517, 515499651, 516702505, 517914115, 519119848, 520316280, 521518612, 522712906, 523911070, 525098667, 526246036, 527373330, 528447564, 529653826, 530865174, 532078662, 533285369, 534474327, 535681010, 536882691, 538092732, 539279819, 540411039, 541485457, 542694008, 543901459, 545112843, 546320885, 547529640, 548718554, 549923225, 551146668, 552288163, 553417482, 554492113, 555697201, 556904759, 558114113, 559322216, 560518766, 561725612, 562934186, 564141460, 565267673, 566395631, 567467840, 567712684, 567958620, 568201226, 568448523, 568688434, 568935849, 569186236, 569426783, 569657655, 569888269)
+  TileByteCounts: (1206303, 1207022, 1209219, 1212490, 1210044, 1210933, 1210861, 1204362, 1213150, 1210872, 1146844, 1210873, 1194270, 1205688, 1197428, 1201952, 1198145, 1208511, 1207243, 1216001, 1209057, 1149104, 1183886, 1213173, 1201366, 1219175, 1195082, 1199993, 1192691, 1204345, 1178532, 1191034, 1148073, 1212975, 1203985, 1211050, 1202533, 1214536, 1166858, 1182826, 1209268, 1178127, 1147687, 1106134, 1202854, 1211610, 1205733, 1196432, 1202332, 1194294, 1198164, 1187597, 1147369, 1127294, 1074234, 1206262, 1211348, 1213488, 1206707, 1188958, 1206683, 1201681, 1210041, 1187087, 1131220, 1074418, 1208551, 1207451, 1211384, 1208042, 1208755, 1188914, 1204671, 1223443, 1141495, 1129319, 1074631, 1205088, 1207558, 1209354, 1208103, 1196550, 1206846, 1208574, 1207274, 1126213, 1127958, 1072209, 244844, 245936, 242606, 247297, 239911, 247415, 250387, 240547, 230872, 230614, 219312)
+  SubIFDs: (789587997, 871859404, 892585849, 897796180, 899098401)
+  SampleFormat: 3
+Page 7:
+  ImageWidth: 5604
+  ImageLength: 4200
+  BitsPerSample: 32
+  Compression: 5
+  PhotometricInterpretation: 1
+  ImageDescription: ImageJ=
+hyperstack=true
+images=8
+channels=8
+slices=1
+frames=1
+  SamplesPerPixel: 1
+  XResolution: (20080543, 1000)
+  YResolution: (20080543, 1000)
+  PlanarConfiguration: 1
+  ResolutionUnit: 3
+  Software: OME Bio-Formats 6.7.0
+  TileWidth: 512
+  TileLength: 512
+  TileOffsets: (570108695, 571239229, 572339173, 573449094, 574568155, 575681989, 576786218, 577908330, 579042036, 580184284, 581326117, 582392284, 583528990, 584664114, 585799394, 586936966, 588099037, 589242379, 590384085, 591519500, 592671588, 593780975, 594829685, 595993533, 597138643, 598301572, 599411826, 600570928, 601728928, 602893430, 604063366, 605236576, 606400809, 607489292, 608615175, 609768606, 610920923, 612075327, 613221920, 614383025, 615539848, 616708245, 617881162, 619026308, 620134766, 621272975, 622415379, 623542070, 624706345, 625871727, 627039473, 628201045, 629376043, 630534154, 631658187, 632743835, 633897601, 635042423, 636194972, 637349776, 638523499, 639679221, 640842030, 641994494, 643159394, 644291179, 645382037, 646521513, 647668146, 648805275, 649959199, 651120739, 652286212, 653409945, 654513790, 655651578, 656781455, 657869590, 659023171, 660167083, 661306811, 662455734, 663613488, 664681502, 665709002, 666873359, 668004018, 669138510, 670227591, 670466065, 670706783, 670946556, 671183301, 671423300, 671651942, 671878324, 672118911, 672352529, 672586419)
+  TileByteCounts: (1130534, 1099944, 1109921, 1119061, 1113834, 1104229, 1122112, 1133706, 1142248, 1141833, 1066167, 1136706, 1135124, 1135280, 1137572, 1162071, 1143342, 1141706, 1135415, 1152088, 1109387, 1048710, 1163848, 1145110, 1162929, 1110254, 1159102, 1158000, 1164502, 1169936, 1173210, 1164233, 1088483, 1125883, 1153431, 1152317, 1154404, 1146593, 1161105, 1156823, 1168397, 1172917, 1145146, 1108458, 1138209, 1142404, 1126691, 1164275, 1165382, 1167746, 1161572, 1174998, 1158111, 1124033, 1085648, 1153766, 1144822, 1152549, 1154804, 1173723, 1155722, 1162809, 1152464, 1164900, 1131785, 1090858, 1139476, 1146633, 1137129, 1153924, 1161540, 1165473, 1123733, 1103845, 1137788, 1129877, 1088135, 1153581, 1143912, 1139728, 1148923, 1157754, 1068014, 1027500, 1164357, 1130659, 1134492, 1089081, 238474, 240718, 239773, 236745, 239999, 228642, 226382, 240587, 233618, 233890, 223817)
+  SubIFDs: (816585244, 878644052, 894297598, 898222862, 899205365)
+  SampleFormat: 3
+
+Detailed IFD entries:
+TiffTag 256 ImageWidth @10 LONG @18 = 5604
+TiffTag 257 ImageLength @22 LONG @30 = 4200
+TiffTag 258 BitsPerSample @34 SHORT @42 = 32
+TiffTag 259 Compression @46 SHORT @54 = LZW
+TiffTag 262 PhotometricInterpretation @58 SHORT @66 = MINISBLACK
+TiffTag 270 ImageDescription @70 ASCII[20597] @899307958 = <?xml version="1.0" 
+TiffTag 277 SamplesPerPixel @82 SHORT @90 = 1
+TiffTag 282 XResolution @94 RATIONAL @292 = (20080543, 1000)
+TiffTag 283 YResolution @106 RATIONAL @300 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @118 SHORT @126 = CONTIG
+TiffTag 296 ResolutionUnit @130 SHORT @138 = CENTIMETER
+TiffTag 305 Software @142 ASCII[22] @308 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @154 SHORT @162 = 512
+TiffTag 323 TileLength @166 SHORT @174 = 512
+TiffTag 324 TileOffsets @178 LONG[99] @330 = (1122, 1202349, 2392733, 3600213, 
+TiffTag 325 TileByteCounts @190 LONG[99] @726 = (1201227, 1190384, 1207480, 120
+TiffTag 330 SubIFDs @202 LONG[5] @899328555 = (672810236, 842455114, 885152256,
+TiffTag 339 SampleFormat @214 SHORT @222 = IEEEFP
+TiffTag 256 ImageWidth @91092488 LONG @91092496 = 5604
+TiffTag 257 ImageLength @91092500 LONG @91092508 = 4200
+TiffTag 258 BitsPerSample @91092512 SHORT @91092520 = 32
+TiffTag 259 Compression @91092524 SHORT @91092532 = LZW
+TiffTag 262 PhotometricInterpretation @91092536 SHORT @91092544 = MINISBLACK
+TiffTag 270 ImageDescription @91092548 ASCII[62] @91092708 = ImageJ= hyperstack
+TiffTag 277 SamplesPerPixel @91092560 SHORT @91092568 = 1
+TiffTag 282 XResolution @91092572 RATIONAL @91092770 = (20080543, 1000)
+TiffTag 283 YResolution @91092584 RATIONAL @91092778 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @91092596 SHORT @91092604 = CONTIG
+TiffTag 296 ResolutionUnit @91092608 SHORT @91092616 = CENTIMETER
+TiffTag 305 Software @91092620 ASCII[22] @91092786 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @91092632 SHORT @91092640 = 512
+TiffTag 323 TileLength @91092644 SHORT @91092652 = 512
+TiffTag 324 TileOffsets @91092656 LONG[99] @91092808 = (91093600, 91743257, 922
+TiffTag 325 TileByteCounts @91092668 LONG[99] @91093204 = (649657, 486539, 3417
+TiffTag 330 SubIFDs @91092680 LONG[5] @899328575 = (695784526, 848236661, 88661
+TiffTag 339 SampleFormat @91092692 SHORT @91092700 = IEEEFP
+TiffTag 256 ImageWidth @125674425 LONG @125674433 = 5604
+TiffTag 257 ImageLength @125674437 LONG @125674445 = 4200
+TiffTag 258 BitsPerSample @125674449 SHORT @125674457 = 32
+TiffTag 259 Compression @125674461 SHORT @125674469 = LZW
+TiffTag 262 PhotometricInterpretation @125674473 SHORT @125674481 = MINISBLACK
+TiffTag 270 ImageDescription @125674485 ASCII[62] @125674645 = ImageJ= hypersta
+TiffTag 277 SamplesPerPixel @125674497 SHORT @125674505 = 1
+TiffTag 282 XResolution @125674509 RATIONAL @125674707 = (20080543, 1000)
+TiffTag 283 YResolution @125674521 RATIONAL @125674715 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @125674533 SHORT @125674541 = CONTIG
+TiffTag 296 ResolutionUnit @125674545 SHORT @125674553 = CENTIMETER
+TiffTag 305 Software @125674557 ASCII[22] @125674723 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @125674569 SHORT @125674577 = 512
+TiffTag 323 TileLength @125674581 SHORT @125674589 = 512
+TiffTag 324 TileOffsets @125674593 LONG[99] @125674745 = (125675537, 126497690,
+TiffTag 325 TileByteCounts @125674605 LONG[99] @125675141 = (822153, 960569, 10
+TiffTag 330 SubIFDs @125674617 LONG[5] @899328595 = (704521963, 850443806, 8871
+TiffTag 339 SampleFormat @125674629 SHORT @125674637 = IEEEFP
+TiffTag 256 ImageWidth @188719249 LONG @188719257 = 5604
+TiffTag 257 ImageLength @188719261 LONG @188719269 = 4200
+TiffTag 258 BitsPerSample @188719273 SHORT @188719281 = 32
+TiffTag 259 Compression @188719285 SHORT @188719293 = LZW
+TiffTag 262 PhotometricInterpretation @188719297 SHORT @188719305 = MINISBLACK
+TiffTag 270 ImageDescription @188719309 ASCII[62] @188719469 = ImageJ= hypersta
+TiffTag 277 SamplesPerPixel @188719321 SHORT @188719329 = 1
+TiffTag 282 XResolution @188719333 RATIONAL @188719531 = (20080543, 1000)
+TiffTag 283 YResolution @188719345 RATIONAL @188719539 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @188719357 SHORT @188719365 = CONTIG
+TiffTag 296 ResolutionUnit @188719369 SHORT @188719377 = CENTIMETER
+TiffTag 305 Software @188719381 ASCII[22] @188719547 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @188719393 SHORT @188719401 = 512
+TiffTag 323 TileLength @188719405 SHORT @188719413 = 512
+TiffTag 324 TileOffsets @188719417 LONG[99] @188719569 = (188720361, 189667348,
+TiffTag 325 TileByteCounts @188719429 LONG[99] @188719965 = (946987, 922090, 79
+TiffTag 330 SubIFDs @188719441 LONG[5] @899328615 = (720421502, 854441888, 8881
+TiffTag 339 SampleFormat @188719453 SHORT @188719461 = IEEEFP
+TiffTag 256 ImageWidth @252599950 LONG @252599958 = 5604
+TiffTag 257 ImageLength @252599962 LONG @252599970 = 4200
+TiffTag 258 BitsPerSample @252599974 SHORT @252599982 = 32
+TiffTag 259 Compression @252599986 SHORT @252599994 = LZW
+TiffTag 262 PhotometricInterpretation @252599998 SHORT @252600006 = MINISBLACK
+TiffTag 270 ImageDescription @252600010 ASCII[62] @252600170 = ImageJ= hypersta
+TiffTag 277 SamplesPerPixel @252600022 SHORT @252600030 = 1
+TiffTag 282 XResolution @252600034 RATIONAL @252600232 = (20080543, 1000)
+TiffTag 283 YResolution @252600046 RATIONAL @252600240 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @252600058 SHORT @252600066 = CONTIG
+TiffTag 296 ResolutionUnit @252600070 SHORT @252600078 = CENTIMETER
+TiffTag 305 Software @252600082 ASCII[22] @252600248 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @252600094 SHORT @252600102 = 512
+TiffTag 323 TileLength @252600106 SHORT @252600114 = 512
+TiffTag 324 TileOffsets @252600118 LONG[99] @252600270 = (252601062, 253793375,
+TiffTag 325 TileByteCounts @252600130 LONG[99] @252600666 = (1192313, 1185258, 
+TiffTag 330 SubIFDs @252600142 LONG[5] @899328635 = (736562568, 858516545, 8892
+TiffTag 339 SampleFormat @252600154 SHORT @252600162 = IEEEFP
+TiffTag 256 ImageWidth @356433627 LONG @356433635 = 5604
+TiffTag 257 ImageLength @356433639 LONG @356433647 = 4200
+TiffTag 258 BitsPerSample @356433651 SHORT @356433659 = 32
+TiffTag 259 Compression @356433663 SHORT @356433671 = LZW
+TiffTag 262 PhotometricInterpretation @356433675 SHORT @356433683 = MINISBLACK
+TiffTag 270 ImageDescription @356433687 ASCII[62] @356433847 = ImageJ= hypersta
+TiffTag 277 SamplesPerPixel @356433699 SHORT @356433707 = 1
+TiffTag 282 XResolution @356433711 RATIONAL @356433909 = (20080543, 1000)
+TiffTag 283 YResolution @356433723 RATIONAL @356433917 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @356433735 SHORT @356433743 = CONTIG
+TiffTag 296 ResolutionUnit @356433747 SHORT @356433755 = CENTIMETER
+TiffTag 305 Software @356433759 ASCII[22] @356433925 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @356433771 SHORT @356433779 = 512
+TiffTag 323 TileLength @356433783 SHORT @356433791 = 512
+TiffTag 324 TileOffsets @356433795 LONG[99] @356433947 = (356434739, 357635710,
+TiffTag 325 TileByteCounts @356433807 LONG[99] @356434343 = (1200971, 1179909, 
+TiffTag 330 SubIFDs @356433819 LONG[5] @899328655 = (762738887, 865101582, 8908
+TiffTag 339 SampleFormat @356433831 SHORT @356433839 = IEEEFP
+TiffTag 256 ImageWidth @462894838 LONG @462894846 = 5604
+TiffTag 257 ImageLength @462894850 LONG @462894858 = 4200
+TiffTag 258 BitsPerSample @462894862 SHORT @462894870 = 32
+TiffTag 259 Compression @462894874 SHORT @462894882 = LZW
+TiffTag 262 PhotometricInterpretation @462894886 SHORT @462894894 = MINISBLACK
+TiffTag 270 ImageDescription @462894898 ASCII[62] @462895058 = ImageJ= hypersta
+TiffTag 277 SamplesPerPixel @462894910 SHORT @462894918 = 1
+TiffTag 282 XResolution @462894922 RATIONAL @462895120 = (20080543, 1000)
+TiffTag 283 YResolution @462894934 RATIONAL @462895128 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @462894946 SHORT @462894954 = CONTIG
+TiffTag 296 ResolutionUnit @462894958 SHORT @462894966 = CENTIMETER
+TiffTag 305 Software @462894970 ASCII[22] @462895136 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @462894982 SHORT @462894990 = 512
+TiffTag 323 TileLength @462894994 SHORT @462895002 = 512
+TiffTag 324 TileOffsets @462895006 LONG[99] @462895158 = (462895950, 464102253,
+TiffTag 325 TileByteCounts @462895018 LONG[99] @462895554 = (1206303, 1207022, 
+TiffTag 330 SubIFDs @462895030 LONG[5] @899328675 = (789587997, 871859404, 8925
+TiffTag 339 SampleFormat @462895042 SHORT @462895050 = IEEEFP
+TiffTag 256 ImageWidth @570107583 LONG @570107591 = 5604
+TiffTag 257 ImageLength @570107595 LONG @570107603 = 4200
+TiffTag 258 BitsPerSample @570107607 SHORT @570107615 = 32
+TiffTag 259 Compression @570107619 SHORT @570107627 = LZW
+TiffTag 262 PhotometricInterpretation @570107631 SHORT @570107639 = MINISBLACK
+TiffTag 270 ImageDescription @570107643 ASCII[62] @570107803 = ImageJ= hypersta
+TiffTag 277 SamplesPerPixel @570107655 SHORT @570107663 = 1
+TiffTag 282 XResolution @570107667 RATIONAL @570107865 = (20080543, 1000)
+TiffTag 283 YResolution @570107679 RATIONAL @570107873 = (20080543, 1000)
+TiffTag 284 PlanarConfiguration @570107691 SHORT @570107699 = CONTIG
+TiffTag 296 ResolutionUnit @570107703 SHORT @570107711 = CENTIMETER
+TiffTag 305 Software @570107715 ASCII[22] @570107881 = OME Bio-Formats 6.7.0
+TiffTag 322 TileWidth @570107727 SHORT @570107735 = 512
+TiffTag 323 TileLength @570107739 SHORT @570107747 = 512
+TiffTag 324 TileOffsets @570107751 LONG[99] @570107903 = (570108695, 571239229,
+TiffTag 325 TileByteCounts @570107763 LONG[99] @570108299 = (1130534, 1099944, 
+TiffTag 330 SubIFDs @570107775 LONG[5] @899328695 = (816585244, 878644052, 8942
+TiffTag 339 SampleFormat @570107787 SHORT @570107795 = IEEEFP
