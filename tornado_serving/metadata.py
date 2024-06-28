@@ -1,6 +1,6 @@
 import tifffile
 
-ome_tiff_path = '/Users/sainia2/Documents/pj/forks/jupyterlab-extensions/tornado_serving/tmp/LuCa-7color_3x3component_data.ome.tif'
+ome_tiff_path = '/Users/sainia2/Documents/pj/forks/jupyterlab-extensions/tornado_serving/custom_ome_tiff.ome.tif'
 
 # Open the OME-TIFF file
 with tifffile.TiffFile(ome_tiff_path) as tif:

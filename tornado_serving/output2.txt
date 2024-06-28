@@ -1,0 +1,37 @@
+OME-XML Metadata:
+ <OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06"><Image ID="Image:0"><Pixels DimensionOrder="XYCZT" ID="Pixels:0" SizeX="512" SizeY="512" SizeZ="1" SizeC="3" SizeT="1" Type="float"><Channel ID="Channel:0:0" SamplesPerPixel="1" /><Channel ID="Channel:0:1" SamplesPerPixel="1" /><Channel ID="Channel:0:2" SamplesPerPixel="1" /></Pixels></Image></OME>
+Page 0:
+  ImageWidth: 512
+  ImageLength: 512
+  BitsPerSample: (8, 8, 8)
+  Compression: 1
+  PhotometricInterpretation: 2
+  ImageDescription: <OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06"><Image ID="Image:0"><Pixels DimensionOrder="XYCZT" ID="Pixels:0" SizeX="512" SizeY="512" SizeZ="1" SizeC="3" SizeT="1" Type="float"><Channel ID="Channel:0:0" SamplesPerPixel="1" /><Channel ID="Channel:0:1" SamplesPerPixel="1" /><Channel ID="Channel:0:2" SamplesPerPixel="1" /></Pixels></Image></OME>
+  ImageDescription: {"shape": [512, 512, 3]}
+  StripOffsets: (656,)
+  SamplesPerPixel: 3
+  RowsPerStrip: 512
+  StripByteCounts: (786432,)
+  XResolution: (1, 1)
+  YResolution: (1, 1)
+  PlanarConfiguration: 1
+  ResolutionUnit: 1
+  Software: tifffile.py
+
+Detailed IFD entries:
+TiffTag 256 ImageWidth @10 LONG @18 = 512
+TiffTag 257 ImageLength @22 LONG @30 = 512
+TiffTag 258 BitsPerSample @34 SHORT[3] @206 = (8, 8, 8)
+TiffTag 259 Compression @46 SHORT @54 = NONE
+TiffTag 262 PhotometricInterpretation @58 SHORT @66 = RGB
+TiffTag 270 ImageDescription @70 ASCII[363] @212 = <OME xmlns="http://www.openm
+TiffTag 270 ImageDescription @82 ASCII[25] @576 = {"shape": [512, 512, 3]}
+TiffTag 273 StripOffsets @94 LONG @102 = (656,)
+TiffTag 277 SamplesPerPixel @106 SHORT @114 = 3
+TiffTag 278 RowsPerStrip @118 LONG @126 = 512
+TiffTag 279 StripByteCounts @130 LONG @138 = (786432,)
+TiffTag 282 XResolution @142 RATIONAL @616 = (1, 1)
+TiffTag 283 YResolution @154 RATIONAL @624 = (1, 1)
+TiffTag 284 PlanarConfiguration @166 SHORT @174 = CONTIG
+TiffTag 296 ResolutionUnit @178 SHORT @186 = NONE
+TiffTag 305 Software @190 ASCII[12] @632 = tifffile.py
