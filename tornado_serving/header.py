@@ -21,7 +21,7 @@ def create_custom_ome_tiff(file_path):
     with tifffile.TiffWriter(file_path) as tif:
         tif.write(image_data, description=ome_xml, photometric='rgb')
 
-# Path to save the custom OME-TIFF file
+
 file_path = 'custom_ome_tiff.ome.tif'
 
 create_custom_ome_tiff(file_path)
