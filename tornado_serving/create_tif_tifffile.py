@@ -11,11 +11,11 @@ def create_custom_ome_tiff(file_path):
     image = SubElement(ome, 'Image', ID='Image:0') # <Image> added as child element of <OME>
     pixels = SubElement(image, 'Pixels', DimensionOrder='XYCZT', ID='Pixels:0', # <Pixels> added as child element of <Image>
                         SizeX='512', SizeY='512', SizeZ='1', SizeC='3', SizeT='1',
-                        Type='float')
+                        PixelType='uint8')
     for c in range(3):
         SubElement(pixels, 'Channel', ID=f'Channel:0:{c}', SamplesPerPixel='1') # Adds <Channel> as child element to <Pixels>
-    
-    ome_xml = tostring(ome).decode('utf-8')
+    tiffdata = SubElement(pixels, 'TiffData')
+    ome_xml = tostring(ome).decode('UTF-8')
 
     # Save the image data with OME-XML metadata
     with tifffile.TiffWriter(file_path) as tif:
@@ -28,3 +28,12 @@ create_custom_ome_tiff(file_path)
 
 
 
+# <OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06">
+#   <Image ID="Image:0">
+#     <Pixels DimensionOrder="XYZCT" ID="Pixels:0" SizeX="512" SizeY="512" SizeZ="1" SizeC="3" SizeT="1" PixelType="uint8">
+#       <Channel ID="Channel:0:0" SamplesPerPixel="1"/>
+#       <Channel ID="Channel:0:1" SamplesPerPixel="1"/>
+#       <Channel ID="Channel:0:2" SamplesPerPixel="1"/>
+#     </Pixels>
+#   </Image>
+# </OME>
